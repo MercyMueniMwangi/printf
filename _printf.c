@@ -22,11 +22,11 @@ int _printf(const char *format, ...)
 		{"R", func_rot13},
 		{NULL, NULL}};
 
-	va_list list;
+	va_list printlist;
 	int count = 0;
 
-	va_start(list, format);
-	count =get_match_func(format, list, st_format);
-	va_end(list);
+	va_start(printlist, format);
+	count =get_match_func(format, printlist, st_format);
+	va_end(printlist);
 	return (count);
 }
