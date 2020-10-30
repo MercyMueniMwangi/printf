@@ -8,11 +8,10 @@
  * Return: reversed string
 */
 
-// function to reverse buffer[i..j]
-char* revString(char *buffer, int i, int j)
+char *revString(char *buffer, int i, int j)
 {
 	while (i < j)
 		swapNum(&buffer[i++], &buffer[j--]);
 
-	return buffer;
+	return (buffer);
 }

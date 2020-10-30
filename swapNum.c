@@ -1,12 +1,16 @@
 #include "holberton.h"
 
 /**
- * swap - swaps two numbers
+ * swapNum - swaps two numbers
  * @x: first number
  * @y: second number
 */
 
-void swapNum(char *x, char *y) 
+void swapNum(char *x, char *y)
 {
-	char t = *x; *x = *y; *y = t;
+	char t;
+
+	t = *x;
+	*x = *y;
+	*y = t;
 }

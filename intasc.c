@@ -4,19 +4,20 @@
 /**
  *intasc - converts integer to ascii equivalent
  *@value: integer to converted
- *@buffer: string 
+ *@buffer: string
  *@base: base to be converted to
  *Return: string equivalentof integer
  */
 
-char* intasc(int value, char* buffer, int base)
+char *intasc(int value, char *buffer, int base)
 {
 	if (base < 2 || base > 32)
-		return buffer;
+		return (buffer);
 
 	int n = abs(value);
 
 	int i = 0;
+
 	while (n)
 	{
 		int r = n % base;
